@@ -1,12 +1,12 @@
-// import "../assets/images";
-import techweb from "../assets/images/techweb.jpg";
+import travelWorld from "../assets/images/travel world.png";
+
 export const projectData = [
   {
     id: 1,
     title: "Travel World",
     description: "A web application to keep travel list items",
-    image: techweb,
+    image: travelWorld,
     tools: ["ReactJS", "TailwindCSS"],
-    link: "",
+    link: "https://shabel-travel-list.netlify.app/",
   },
 ];
