@@ -3,7 +3,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 const Contact = () => {
   return (
-    <main className="flex flex-col items-center md:pt-[20vh] gap-12 h-full ">
+    <main className="flex flex-col items-center pt-[8vh] md:pt-[20vh] gap-12 h-full ">
       <h1 className="text-5xl font-bold text-heading tracking-wide">
         Want to reach out?
       </h1>

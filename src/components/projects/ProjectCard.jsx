@@ -3,6 +3,10 @@ import { useState } from "react";
 const ProjectCard = ({ project }) => {
   const [hover, setHover] = useState(false);
 
+  function handleClick() {
+    window.location.href = project.link;
+  }
+
   return (
     <div
       className={`h-[250px] border border-active rounded-md overflow-hidden relative cursor-pointer ${
@@ -10,6 +14,7 @@ const ProjectCard = ({ project }) => {
       } `}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onClick={handleClick}
     >
       <div
         className={`w-full h-full transition-all duration-300 ${

@@ -1,7 +1,7 @@
 import profile from "../assets/images/profile.jpg";
 const About = () => {
   return (
-    <div className="flex h-full ">
+    <div className="flex flex-col md:flex-row h-full ">
       <article className="flex flex-col justify-center flex-1 gap-8">
         <h1 className="text-5xl font-bold text-heading tracking-wide">
           About me
