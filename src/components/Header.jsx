@@ -12,7 +12,9 @@ export default function Header() {
       </h2>
       <nav
         className={`flex flex-col md:flex-row gap-5 mt-5 md:mt-0 items-center w-full md:justify-between md:w-[40%] lg:w-[30%] font-bold tracking-widest text-sm ${
-          isOpen ? "block h-screen gap-12 mt-[15vh] " : "hidden"
+          isOpen
+            ? "block h-screen gap-12 pt-[15vh] z-10 "
+            : "hidden md:flex md:justify-between"
         } `}
       >
         <NavLink
