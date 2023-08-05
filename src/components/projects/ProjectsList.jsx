@@ -4,7 +4,7 @@ const ProjectsList = () => {
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
       {projectData.map((project) => (
-        <ProjectCard project={project} />
+        <ProjectCard project={project} key={project.id} />
       ))}
     </div>
   );

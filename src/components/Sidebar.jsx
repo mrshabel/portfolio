@@ -4,7 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 
 export default function Sidebar() {
   return (
-    <nav className="flex flex-col py-6 gap-6 justify-end items-center h-full px-1">
+    <nav className="flex md:flex-col py-6 gap-6 justify-end items-center h-full px-1">
       <a
         href="https://www.github.com/mrshabel"
         className="hover:text-active hover:scale-110 transition-all duration-300"

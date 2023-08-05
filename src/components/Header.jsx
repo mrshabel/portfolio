@@ -1,10 +1,20 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { RiMenu3Line } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="text-heading flex justify-between items-center py-4">
-      <h2 className="text-active font-bold tracking-widest ">Sha.Bel</h2>
-      <nav className="flex justify-between md:w-[40%] lg:w-[30%] font-bold tracking-widest text-sm  ">
+    <header className="text-heading flex justify-end md:justify-between py-4">
+      <h2 className="text-active font-bold tracking-widest hidden md:block ">
+        Sha.Bel
+      </h2>
+      <nav
+        className={`flex flex-col md:flex-row gap-5 mt-5 md:mt-0 items-center w-full md:justify-between md:w-[40%] lg:w-[30%] font-bold tracking-widest text-sm ${
+          isOpen ? "block h-screen gap-12 mt-[15vh] " : "hidden"
+        } `}
+      >
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -38,6 +48,12 @@ export default function Header() {
           Contact
         </NavLink>
       </nav>
+      <div
+        className="block md:hidden "
+        onClick={() => setIsOpen((isOpen) => !isOpen)}
+      >
+        {isOpen ? <AiOutlineClose /> : <RiMenu3Line />}
+      </div>
     </header>
   );
 }
