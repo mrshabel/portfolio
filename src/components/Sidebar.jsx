@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoIosMail } from "react-icons/io";
-import { BsTwitter } from "react-icons/bs";
+import { BsTwitter, BsWhatsapp } from "react-icons/bs";
 
 export default function Sidebar() {
   return (
@@ -23,6 +23,13 @@ export default function Sidebar() {
         className="hover:text-active hover:scale-110 transition-all duration-300"
       >
         <IoIosMail size={"1.5em"} />
+      </a>
+
+      <a
+        href="https://wa.link/yebno6"
+        className="hover:text-active hover:scale-105 transition-all duration-300"
+      >
+        <BsWhatsapp size={"1.4em"} />
       </a>
 
       <a

@@ -11,10 +11,10 @@ export default function Header() {
         Sha.Bel
       </h2>
       <nav
-        className={`flex flex-col md:flex-row gap-5 mt-5 md:mt-0 items-center w-full md:justify-between md:w-[40%] lg:w-[30%] font-bold tracking-widest text-sm ${
+        className={`flex flex-col lg:flex-row gap-5 mt-5 lg:mt-0 items-center w-full lg:justify-between bg-dark lg:w-[30%] font-bold tracking-widest text-sm ${
           isOpen
-            ? "block h-screen gap-12 pt-[15vh] z-10 "
-            : "hidden md:flex md:justify-between"
+            ? "block h-screen gap-12 pt-[15vh] z-[200] "
+            : "hidden lg:flex lg:justify-between"
         } `}
       >
         <NavLink
@@ -51,7 +51,7 @@ export default function Header() {
         </NavLink>
       </nav>
       <div
-        className="block md:hidden "
+        className="block lg:hidden cursor-pointer p-2 "
         onClick={() => setIsOpen((isOpen) => !isOpen)}
       >
         {isOpen ? <AiOutlineClose /> : <RiMenu3Line />}
