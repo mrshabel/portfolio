@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import Sidebar from "../components/Sidebar";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 const Contact = () => {
@@ -16,7 +17,7 @@ const Contact = () => {
             label={<a href="mailto:shabel500@gmail.com">Send an Email</a>}
           />
           <p className="text-center mt-5">OR</p>
-          <div className="flex items-center justify-center mt-5 gap-6">
+          <div className="hidden md:flex items-center justify-center mt-5 gap-6">
             <a
               href="https://wa.link/yebno6"
               className="hover:text-active hover:scale-105 transition-all duration-300"
@@ -31,6 +32,9 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        <footer className="flex justify-center md:hidden">
+          <Sidebar />
+        </footer>
       </section>
     </main>
   );
