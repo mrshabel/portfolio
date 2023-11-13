@@ -1,12 +1,13 @@
-import travelWorld from "../assets/images/travel world.png";
+import beckyBoutique from "../assets/images/becky boutique.png";
 
 export const projectData = [
+
   {
     id: 1,
-    title: "Travel World",
-    description: "A web application to keep travel list items",
-    image: travelWorld,
-    tools: ["ReactJS", "TailwindCSS"],
-    link: "https://shabel-travel-list.netlify.app/",
+    title: "Becky Boutique",
+    description: "An ecommerce website",
+    image: beckyBoutique,
+    tools: ["ReactJS", "TailwindCSS", "SwiperJS"],
+    link: "https://becky-boutique.vercel.app",
   },
 ];
